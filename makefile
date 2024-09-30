@@ -37,6 +37,10 @@ arrayRun:
 fmtAll:
 	cd $(HELLODIR) && go fmt .
 	cd $(INTEGERDIR) && go fmt .
+	cd $(ARRAYDIR) && go fmt .
+	cd $(ITERATIONDIR) && go fmt .
 docs:
 	cd $(HELLODIR) && go doc
 	cd $(INTEGERDIR) && go doc
+	cd $(ARRAYDIR) && go doc
+	cd $(ITERATIONDIR) && go doc
