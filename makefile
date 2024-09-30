@@ -2,7 +2,7 @@ HELLODIR = helloworld/
 INTEGERDIR = integers/
 ITERATIONDIR = iteration/
 
-.PHONY: all helloTest helloRun intTest intRun fmtAll docs
+.PHONY: all helloTest helloRun intTest intRun iterRun iterTest fmtAll docs 
 
 all: helloTest intTest iterTest
 
