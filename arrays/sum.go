@@ -21,5 +21,6 @@ func SumAll(numbersToSum ...[]int) []int {
 }
 
 func main() {
-	fmt.Println(SumAll([]int{2, 3, 4}))
+	fmt.Println(Sum([]int{2, 3, 4, 5, 3}))
+	fmt.Println(SumAll([]int{2, 3, 4, 1, 2}))
 }
