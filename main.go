@@ -14,7 +14,6 @@ func Hello(name string, language string) string {
 	if name == "" {
 		name = "World"
 	}
-
 	prefix := englishHelloPrefix
 	switch language {
 	case spanish:
