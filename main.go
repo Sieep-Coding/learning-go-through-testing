@@ -4,11 +4,13 @@ import (
 	"fmt"
 )
 
-const englishHelloPrefix = "Hello, "
-const spanishHelloPrefix = "Hola, "
-const spanish = "Spanish"
-const frenchHelloPrefix = "Bonjure, "
-const french = "French"
+const (
+	englishHelloPrefix = "Hello, "
+	spanishHelloPrefix = "Hola, "
+	spanish            = "Spanish"
+	frenchHelloPrefix  = "Bonjure, "
+	french             = "French"
+)
 
 func Hello(name string, language string) string {
 	if name == "" {
