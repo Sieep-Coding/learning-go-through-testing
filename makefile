@@ -12,7 +12,7 @@ helloRun:
 	cd $(HELLODIR) && go run .
 
 intTest:
-	cd $(INTEGERDIR) && go test
+	cd $(INTEGERDIR) && go test -v
 
 intRun:
 	cd $(INTEGERDIR) && go run .
