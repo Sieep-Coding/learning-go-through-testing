@@ -14,7 +14,7 @@ func TestHello(t *testing.T) {
 		AssertCorrectMessage(t, got, want)
 	})
 }
-func AssertCorrectMessage(t testing.TB, got string, want string) {
+func AssertCorrectMessage(t testing.TB, got, want string) {
 	t.Helper()
 	if got != want {
 		t.Errorf("got %q, want %q", got, want)
