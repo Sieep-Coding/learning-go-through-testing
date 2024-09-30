@@ -2,7 +2,7 @@ HELLODIR = helloworld/
 INTEGERDIR = integers/
 ITERATIONDIR = iteration/
 
-.PHONY: all helloTest helloRun intTest intRun iterRun iterTest fmtAll docs 
+.PHONY: all helloTest helloRun intTest intRun iterRun iterBench iterTest fmtAll docs 
 
 all: helloTest intTest iterTest
 
@@ -17,6 +17,9 @@ intTest:
 
 iterTest:
 	cd $(ITERATIONDIR) && go test
+
+iterBench:
+	cd $(ITERATIONDIR) && go test -bench=.
 
 iterRun:
 	cd $(ITERATIONDIR) && go run .
