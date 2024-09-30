@@ -1,10 +1,11 @@
 HELLODIR = helloworld/
 INTEGERDIR = integers/
 ITERATIONDIR = iteration/
+ARRAYDIR = arrays/
 
-.PHONY: all helloTest helloRun intTest intRun iterRun iterBench iterTest fmtAll docs 
+.PHONY: all helloTest helloRun arrayRun arrayTest intTest intRun iterRun iterBench iterTest fmtAll docs 
 
-all: helloTest intTest iterTest
+all: helloTest intTest iterTest arrayTest
 
 helloTest:
 	cd $(HELLODIR) && go test
@@ -26,6 +27,12 @@ iterRun:
 
 intRun:
 	cd $(INTEGERDIR) && go run .
+
+arrayTest:
+	cd $(ARRAYDIR) && go test
+
+arrayRun:
+	cd $(ARRAYDIR) && go run .
 
 fmtAll:
 	cd $(HELLODIR) && go fmt .
