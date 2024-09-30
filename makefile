@@ -20,3 +20,6 @@ intRun:
 fmtAll:
 	cd $(HELLODIR) && go fmt .
 	cd $(INTEGERDIR) && go fmt .
+docs:
+	cd $(HELLODIR) && go doc
+	cd $(INTEGERDIR) && go doc
