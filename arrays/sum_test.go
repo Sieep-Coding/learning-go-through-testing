@@ -43,8 +43,10 @@ func TestSumAll(t *testing.T) {
 		checkSums(t, got, want)
 	})
 
-	t.Run("sum different array sizes", func(t *testing.T) {
-
+	t.Run("sum arrays with different lengths", func(t *testing.T) {
+		got := SumAll([]int{1, 2}, []int{1, 3, 4, 5})
+		want := []int{3, 13}
+		checkSums(t, got, want)
 	})
 }
 
