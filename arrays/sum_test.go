@@ -54,7 +54,7 @@ func TestSumAllTails(t *testing.T) {
 
 	t.Run("sum more than 3 slices", func(t *testing.T) {
 		got := SumAll([]int{1, 2, 3}, []int{1, 4, 2}, []int{5, 2, 1}, []int{})
-		want := []int{6, 7, 8}
+		want := []int{6, 7, 8, 0}
 		checkSums(t, got, want)
 	})
 }
