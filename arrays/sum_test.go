@@ -39,19 +39,16 @@ func TestSumAllTails(t *testing.T) {
 			t.Errorf("got %v, wanted %v", got, want)
 		}
 	}
-
 	t.Run("make a sum of some slices", func(t *testing.T) {
 		got := SumAllTails([]int{1, 2}, []int{0, 9})
 		want := []int{2, 9}
 		checkSums(t, got, want)
 	})
-
 	t.Run("safely sum empty slices", func(t *testing.T) {
 		got := SumAllTails([]int{}, []int{3, 4, 5})
 		want := []int{0, 9}
 		checkSums(t, got, want)
 	})
-
 	t.Run("sum more than 3 slices", func(t *testing.T) {
 		got := SumAll([]int{1, 2, 3}, []int{1, 4, 2}, []int{5, 2, 1}, []int{})
 		want := []int{6, 7, 8, 0}
