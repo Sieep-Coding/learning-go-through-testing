@@ -43,7 +43,9 @@ func TestSumAll(t *testing.T) {
 		checkSums(t, got, want)
 	})
 
-	t.Run("sum different array sizes")
+	t.Run("sum different array sizes", func(t *testing.T) {
+
+	})
 }
 
 func TestSumAllTails(t *testing.T) {
